@@ -12,11 +12,12 @@ body{
     position: fixed;
 }
 .name{
-    font=size: 1rem;
+    font-size: 1rem;
     letter-spacing: 5px;
     font-weight: lighter;
     text-transform: none;
     margin-top: 2rem;
+    margin-right: 2rem;
     float: right;
 }
 .name a{
@@ -35,6 +36,9 @@ body{
     color: black;
 }
 .navbar li{
-    list-style-type:none;
+    list-style-type: none;
     display: inline;
+    margin-left: 2rem;
+    letter-spacing: 5px;
+    margin-right: 2rem;
 }
