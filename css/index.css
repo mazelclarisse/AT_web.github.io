@@ -1,47 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Srisakdi');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 body{
     background-color: black;
     margin: 0;
-    font-family: 'Srisakdi', cursive;
+    font-family: 'Anton', sans-serif;
 }
 .container{
     background-color: whitesmoke;
-    width: 100%;
-    display: table;
-    position: fixed;
+    display: flex;
+    
 }
 .name{
     font-size: 1rem;
-    letter-spacing: 5px;
-    font-weight: lighter;
+    letter-spacing: 4px;
+    font-weight: heavier;
     text-transform: none;
     margin-top: 2rem;
-    margin-right: 2rem;
-    float: right;
+    margin-right: 20rem;
+    float: center;
 }
 .name a{
     color: black;
     text-decoration: none;
 }
-.navbar{
-    float: left;
-    margin-left: 2rem;
+.full-navbar{
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: block;
-}
-.navbar a{
-    text-decoration: none;
-    color: black;
-}
-.navbar li{
     list-style-type: none;
-    display: inline;
-    margin-left: 2rem;
-    letter-spacing: 5px;
-    margin-right: 2rem;
-}
-div.image{
-    content: url(https://images.app.goo.gl/S5Aix9FgcQ2uYcE8A);
+    letter-spacing: 4px;
+    margin-right: 5rem;
 }
