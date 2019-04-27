@@ -42,3 +42,6 @@ body{
     letter-spacing: 5px;
     margin-right: 2rem;
 }
+div.image{
+    content: url(https://images.app.goo.gl/S5Aix9FgcQ2uYcE8A);
+}
