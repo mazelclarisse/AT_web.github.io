@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel ="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <title>Mazel Fernandez</title>
+  <title>Mazel Fernandez</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
-<body>
-<!------ MAIN BODY ---->
-<center><img src= "https://pbs.twimg.com/media/B7xifJYCEAAUyTf.jpg"></center>
-    <div class="container">
-        <div class="name">
-            <a href="index.html">Maze Blaze</a>
-        </div>
-        <div class= "navbar"></div>
-            <ul class= "full-navbar">
-                <ul class= "nav justify-content-center"></ul>
-              <li class = "nav-item">
-                 <a href="http://www.sanger.dk">Yikes</a>
-              </li>
-              <li class = "nav-item">
-                  <a href="https://docs.google.com/document/d/e/2PACX-1vRutpP5Pi19ymLfjcnrsQOL9RYSSIkIF-XQzVSuejUdsVyL8YIMNPrbp45O1jr_4X3ZHaR4U1KFhepB/pub"> Resume </a>
-              </li>
-              <li class = "nav-item">
-                <a href="/pages/portfolio.html"> Portfolio </a>
-             </li>
-            </ul>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">MAZE BLAZE</a>
     </div>
-<!----- ABOUT SECTION -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#aboutme">ABOUT ME</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vRutpP5Pi19ymLfjcnrsQOL9RYSSIkIF-XQzVSuejUdsVyL8YIMNPrbp45O1jr_4X3ZHaR4U1KFhepB/pub">RESUME</a></li>
+        <li><a href="/pages/portfolio.html">PORTFOLIO</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">EXTRA</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     
-      <!-- Text -->
-<section id="section-d" class="grid">
-    <div class="box">
-        <h2 class="content-title">About Me.</h2>
-        <p>My name is Mazel Fernandez and I am currently a sophomore majoring in computer science at California State University, Los Angeles.
-            With my major, I plan to expand my knowledge on Cyber Security and artificial intelligence systems. Aside from school, my hobbies include 
-            fitness, community service, gaming, and netflix. 
-        </p>
-        
+      <div class="item">
+        <center><img src="https://pbs.twimg.com/media/B7xifJYCEAAUyTf.jpg" "alt="Los Angeles" width="1200" height="700"></center>
+        <div class="carousel-caption">
+          <h3>Welcome!</h3>
+          <p>Current sophomore majoring in Computer Science</p>
+        </div>      
+      </div>
     </div>
-        <div class="box">
-          <h2 class="content-title">Contact info :3</h2>
-          <p>School Email: mferna79@calstatela.edu</p>
-          <p>Personal EmaiL: mazelclarisse28@gmail.com</p>
-    
-        </div>
-</section>
-    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+<!-- Container -->
+<div id="aboutme" class="container text-center">
+  <h3>ABOUT ME</h3>
+  <p><em>So you're probably wondering how I got here...</em></p>
+  <p>My name is Mazel Fernandez and I am a sophomore studying Computer Science at Cal State LA. I am looking to grow my experience and knowledge with different programming languages and anything technology related. With my major, I plan to explore the cybersecurity and artificial intelligence field. I am passionate about fitness and self-care. When I am not at the gym, I am most likely binge-watching Netflix shoes, watching anime, or playing Thin Ice on Club Penguin.</p>
+  <br>
+
+<!-- Image of location/map -->
+<img src="https://cdn2.f-cdn.com/contestentries/1292203/22236375/5abe90c26c22d_thumb900.jpg" "img-responsive" style="width:100%">
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Copyright - Mazel Fernandez</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
 </body>
 </html>
+
